@@ -1,0 +1,58 @@
+<main ng-controller="CandController">
+  <h1>{{candFirstName}}</h1>
+    <h2 class="largeCursive">A {{state}} {{party}} in the {{chamber}}</h2>
+      <h2>First elected to Congress in {{cand.summary["@attributes"].first_elected}}</h2>
+
+    <h2>Total Raised</h2>
+  <h1>{{cand.summary["@attributes"].total | currency}}</h1>
+</main>
+
+<article class="leftArticle" ng-controller="TopContribController">
+  <h3 class="largeCursive">Top Contributors</h3>
+  <table>
+  <thead>
+    <tr>
+      <th>Contributor</th>
+      <th>Total Contribution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="contributor in contributors">
+      <td>{{contributor["@attributes"].org_name}}</td>
+      <td>{{contributor["@attributes"].total | currency}}</td>
+    </tr>
+  </tbody>
+</table>
+</article>
+
+<article class="rightArticle" ng-controller="TopSectorController">
+  <h3 class="largeCursive">Top Sectors</h3>
+  <table>
+  <thead>
+    <tr>
+      <th>Sector Name</th>
+      <th>Total Contribution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="sector in sectors | limitTo: 10">
+      <td>{{sector["@attributes"].sector_name}} </td>
+      <td>{{sector["@attributes"].total | currency}}</td>
+    </tr>
+  </tbody>
+</table>
+</article>
+
+<article class="allArticle" ng-controller="StoriesController">
+    <h3 class="largeCursive">News Feed</h3>
+    <h4>Click on the title for more information</h4>
+    <div ng-repeat="story in stories | limitTo: 7">
+      <a href="" ng-click="showText =! showText">{{story.thread.title}}</a>
+      <div ng-show="showText">
+        <img src="{{story.thread.main_image}}" alt=""/>
+        <h4>From {{story.thread.site}}</h4>
+        <p>Published {{story.thread.published | date:'MMMM d, yyyy'}}</p>
+        <a href="{{story.thread.url}}">Go to Article</a>
+      </div>
+    </div>
+  </article>

@@ -1,0 +1,4 @@
+<h1>Latest Searches</h1>
+<main class="searchList" ng-repeat="search in latestSearches | limitTo: 15">
+  <h3>{{search.candName}}, {{search.party}}- {{search.office}}</h3>
+</main>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="FinDataApp">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora:400italic' rel='stylesheet' type='text/css'>
+
+    <title>Eye on The Incumbents</title>
+  </head>
+  <body>
+    <nav class="leftnav">
+      <a href="#/">Seach Again</a>
+      <a href="#/about">About</a>
+      <a href="#/latestsearches">Latest Searches</a>
+
+    </nav>
+    <nav class="rightnav">
+      <h1>Eye</h1> <h2>on</h2> <h1>The Incumbents</h1>
+      <!-- <p>Transparency is essential to democracy.</p> -->
+    </nav>
+
+    <div><ng-view></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.6/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.6/angular-route.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.6/angular-resource.min.js"></script>
+    <script src="app.js"></script>
+    <script src="routes/routes.js"></script>
+    <script src="js/searchcontroller.js"></script>
+    <script src="js/candcontroller.js"></script>
+    <script src="js/topcontroller.js"></script>
+    <script src="js/storiescontroller.js"></script>
+    <script src="js/searchreturncontroller.js"></script>
+    <script src="js/factories.js"></script>
+  </body>
+</html>
