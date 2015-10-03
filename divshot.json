@@ -1,0 +1,6 @@
+{
+  "name": "eyes-on-congress",
+  "root": "./",
+  "clean_urls": true,
+  "error_page": "error.html"
+}
