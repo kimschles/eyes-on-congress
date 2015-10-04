@@ -42,7 +42,7 @@ h2, h3, h4 {
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .bioPic {
@@ -179,4 +179,14 @@ a {
   text-align: content: '';
   padding: 2px;
   letter-spacing: 1px;
+}
+
+.aboutDiv {
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+}
+
+.aboutDiv h2 {
+  font-size: 2em;
 }
