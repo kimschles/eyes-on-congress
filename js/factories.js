@@ -1,6 +1,6 @@
 app.factory('DataFactory', ['$http', '$q', function($http, $q) {
   var finData = {}
-  var link = 'https://desolate-woodland-4334.herokuapp.com/api/financeData/'
+  var link = 'http://capstone-server.cfapps.io/api/financeData/'
 
 finData.getList = function (searchTerm) {
   var deferred = $q.defer()
@@ -56,7 +56,7 @@ finData.getStories = function (lastname) {
 
 app.factory('SearchFactory', ['$http', '$q', function($http, $q) {
   var searchData = {}
-  var dbLink = 'https://desolate-woodland-4334.herokuapp.com/api/searchTerms/'
+  var dbLink = 'http://capstone-server.cfapps.io/api/searchTerms/'
   searchData.post = function (obj) {
     $http.post(dbLink, obj).then(function (response) {
   });
