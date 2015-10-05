@@ -2,5 +2,5 @@ app.controller('StoriesController', ["$scope", '$routeParams', 'DataFactory', fu
   DataFactory.getStories($routeParams.lastname).then(function(response) {
     console.log(response.body.posts);
     $scope.stories = response.body.posts
-  })
+  });
 }]);

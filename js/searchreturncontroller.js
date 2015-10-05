@@ -1,7 +1,6 @@
 app.controller('SearchReturnController', ["$scope", 'SearchFactory', function($scope, SearchFactory) {
   SearchFactory.getSearches().then(function(response) {
     $scope.latestSearches = response
-    console.log(response);
 
     function partyExpander (string) {
       if (string === "D") {
@@ -17,5 +16,5 @@ app.controller('SearchReturnController', ["$scope", 'SearchFactory', function($s
       }
     };
     $scope.party = partyExpander(response.party);
-  })
+  });
 }]);

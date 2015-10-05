@@ -7,7 +7,7 @@ app.controller('CandController', ["$scope", '$routeParams', 'DataFactory', funct
     function nameSwitch(ele){
         var splitName = ele.split(",");
         return splitName.reverse().join(" ")
-    }
+    };
     $scope.candFirstName = nameSwitch(parsedResponse.response.summary['@attributes'].cand_name)
 
     function partyExpander (string) {
@@ -148,5 +148,5 @@ app.controller('CandController', ["$scope", '$routeParams', 'DataFactory', funct
       }
     };
     $scope.state = stateName(parsedResponse.response.summary["@attributes"].state);
-  })
+  });
 }]);

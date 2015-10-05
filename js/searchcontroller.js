@@ -7,21 +7,6 @@ app.controller('SearchController', ["$scope", "$location", 'DataFactory', 'Searc
       var legislatorsArray = parsedResponse.response.legislator
       console.log(legislatorsArray);
       $scope.legislators = legislatorsArray
-
-      // function partyExpander (string) {
-      //   if (string === "D") {
-      //     return "Democrat"
-      //   }
-      //   if (string === "R") {
-      //     return "Republican"
-      //   }
-      //   if (string === "I") {
-      //     return "Independent"
-      //   } else {
-      //     return "Third Party"
-      //   }
-      // }
-      // $scope.party = partyExpander(parsedResponse.party);
     })
     $scope.addCand = function (cid, lastname, firstlast, party, office) {
       CurrentCandidate.cid = cid
