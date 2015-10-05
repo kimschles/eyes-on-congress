@@ -1,3 +1,21 @@
+//to pass search queries to api calls
+app.factory('SearchTerm', function() {
+  var searchTerm = {}
+  searchTerm.current = undefined
+  return searchTerm
+});
+
+//to pass candidate queries to api calls
+app.factory('CurrentCandidate', function() {
+  var candidate = {}
+  candidate.cid = undefined
+  candidate.lastname = undefined
+  candidate.firstlast = undefined
+  candidate.party = undefined
+  candidate.office = undefined
+  return candidate
+});
+
 app.factory('DataFactory', ['$http', '$q', function($http, $q) {
   var finData = {}
   var link = 'https://desolate-woodland-4334.herokuapp.com/api/financeData/'
@@ -73,21 +91,3 @@ searchData.getSearches = function () {
   };
   return searchData
 }]);
-
-//to pass search queries to api calls
-app.factory('SearchTerm', function() {
-  var searchTerm = {}
-  searchTerm.current = undefined
-  return searchTerm
-});
-
-//to pass candidate queries to api calls
-app.factory('CurrentCandidate', function() {
-  var candidate = {}
-  candidate.cid = undefined
-  candidate.lastname = undefined
-  candidate.firstlast = undefined
-  candidate.party = undefined
-  candidate.office = undefined
-  return candidate
-});
