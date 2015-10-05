@@ -1,5 +1,5 @@
  html, body {
-   margin: 0;
+   margin: 0 auto;
    padding: 0;
  }
 
@@ -24,13 +24,6 @@ th, tr, td {
   font-size: 1.1em;
 }
 
-
-h1 {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 5em;
-  text-align: center;
-}
-
 h1 {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 4em;
@@ -42,7 +35,7 @@ h2, h3, h4 {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .bioPic {
@@ -63,7 +56,6 @@ a {
   color: black;
   font-size: 2em;
 }
-
 
 .searchList {
   text-align: center;
@@ -88,14 +80,12 @@ a {
 	text-shadow:#FE6 0 1px 0
 }
 
-
 .leftnav {
   height: 6em;
   width: 60%;
   background-color: rgba(38, 116, 165, .7);
   float: left;
 }
-
 
 .rightnav {
   height: 6em;
