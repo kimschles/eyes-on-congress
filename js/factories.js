@@ -18,7 +18,7 @@ app.factory('CurrentCandidate', function() {
 
 app.factory('DataFactory', ['$http', '$q', function($http, $q) {
   var finData = {}
-  var link = 'https://desolate-woodland-4334.herokuapp.com/api/financeData/'
+  var link = 'https://pacific-wildwood-1522.herokuapp.com/api/financeData/'
 
 finData.getList = function (searchTerm) {
   var deferred = $q.defer()
@@ -74,7 +74,7 @@ finData.getStories = function (lastname) {
 
 app.factory('SearchFactory', ['$http', '$q', function($http, $q) {
   var searchData = {}
-  var dbLink = 'https://desolate-woodland-4334.herokuapp.com/api/searchTerms/'
+  var dbLink = 'https://pacific-wildwood-1522.herokuapp.com/api/searchTerms/'
   searchData.post = function (obj) {
     $http.post(dbLink, obj).then(function (response) {
   });
