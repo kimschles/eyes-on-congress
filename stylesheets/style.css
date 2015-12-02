@@ -80,21 +80,21 @@ a {
 	text-shadow:#FE6 0 1px 0
 }
 
-.leftnav {
+/*.leftnav {
   height: 6em;
   width: 60%;
   background-color: rgba(38, 116, 165, .7);
   float: left;
-}
+}*/
 
-.rightnav {
+.leftnav {
   height: 6em;
-  width: 40%;
+  width: 30%;
   background-color: rgba(38, 116, 165, .7);
-  float: right;
+  float: left;
 }
 
-.rightnav p {
+.leftnav p {
   font-family: 'Lora', serif;
   font-style: italic;
   font-size: 1.3em;
@@ -104,14 +104,14 @@ a {
   margin-left: 2.5em;
 }
 
-.rightnav h1 {
+.leftnav h1 {
   display: inline;
   color: white;
   font-size: 3em;
   text-align: center;
 }
 
-.rightnav h2 {
+.leftnav h2 {
   display: inline;
   font-family: 'Lora', serif;
   font-style: italic;

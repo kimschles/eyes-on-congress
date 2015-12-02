@@ -10,21 +10,29 @@
     <title>Eye on The Incumbents</title>
   </head>
   <body>
-    <nav class="leftnav">
+    <!-- <nav class="leftnav">
       <a href="#/">Seach Again</a>
-      <a href="#/about">About</a>
       <a href="#/latestsearches">Latest Searches</a>
 
-    </nav>
-    <nav class="rightnav">
+    </nav> -->
+    <nav class="leftnav">
       <h1>Eye</h1> <h2>on</h2> <h1>The Incumbents</h1>
     </nav>
+    <a href="#/about">About</a>
+
+
+    <h2>Find campaign finance spending data and relevant news stories about Congressional Incumbents.</h2>
+
 
     <div><ng-view></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.6/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.6/angular-route.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.6/angular-resource.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.10/d3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+    <script src="datamaps.us.js"></script>
+    <script src="node_modules/angular-datamaps.js"></script>
     <script src="app.js"></script>
     <script src="routes/routes.js"></script>
     <script src="js/searchcontroller.js"></script>
@@ -33,5 +41,6 @@
     <script src="js/storiescontroller.js"></script>
     <script src="js/searchreturncontroller.js"></script>
     <script src="js/factories.js"></script>
+
   </body>
 </html>
