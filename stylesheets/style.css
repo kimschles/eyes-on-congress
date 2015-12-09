@@ -122,10 +122,17 @@ a {
 
 .tagline {
   display: inline-block;
+  width: 100%;
   font-family: 'Lato', sans-serif;
+  text-transform: capitalize;
   text-align: center;
 }
 
+#container {
+  width: 700px;
+  height: 500px;
+  margin: 0 auto;
+}
 .rightArticle {
   width: 50%;
   float: right;
