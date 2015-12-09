@@ -84,7 +84,7 @@ a {
 
 .logo {
   height: 6em;
-  width: 66%;
+  width: 33%;
   background-color: rgba(38, 116, 165, .7);
   border-radius: 4px;
   float: left;
@@ -117,7 +117,7 @@ a {
 .about {
   float: right;
   font-family: 'Lato', sans-serif;
-  width: 33%
+  padding: 1em;
 }
 
 .tagline {
