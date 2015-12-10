@@ -1,25 +1,10 @@
-<nav class="logo">
-  <h1>Eye</h1> <h2>on</h2> <h1>The Incumbents</h1>
-</nav>
-<a class="about" href="#/about">About</a>
-
-
 <h2 class="tagline">See campaign finance spending data for congressional incumbents</h2>
 
-<datamap map="mapObject" on-click="updateActiveGeography"></datamap>
+<datamap map="mapObject" on-click="addSearch"></datamap>
 
-<h2>State name: {{statename}}</h2>
+<!-- Showsist of legislators from the current state  -->
 
-
-
-
-<form>
-    <input class="searchButton" type="submit" ng-click="addSearch(search)" name="text" value="Search">
-</form>
-
-<!-- List of legislators from state that was clicked on  -->
-
-<!-- <main class="legisList"  ng-repeat="legislator in legislators">
+<main class="legisList"  ng-repeat="legislator in legislators">
   <a href="" ng-click="addCand(legislator['@attributes'].cid, legislator['@attributes'].lastname, legislator['@attributes'].firstlast, legislator['@attributes'].party, legislator['@attributes'].office)">
     {{legislator["@attributes"].firstlast}}- {{legislator["@attributes"].party}}</a>
-</main>  -->
+</main>

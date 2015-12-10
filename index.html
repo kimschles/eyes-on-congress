@@ -10,11 +10,14 @@
     <title>Eye on The Incumbents</title>
   </head>
   <body>
-    <!-- <nav class="logo">
-      <a href="#/">Seach Again</a>
-      <a href="#/latestsearches">Latest Searches</a>
 
-    </nav> -->
+
+    <nav class="logo">
+      <h1>Eye</h1> <h2>on</h2> <h1>The Incumbents</h1>
+    </nav>
+    <a class="about" href="#/about">About</a>
+
+
 
     <div><ng-view></div>
 
@@ -26,6 +29,17 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
     <script src="node_modules/datamaps/dist/datamaps.usa.min.js"></script>
+    <script src="node_modules/angular-datamaps/dist/angular-datamaps.js"></script>
+
+    <div id="container"></div>
+
+    <!-- <script>
+      var map = new Datamap({
+          element: document.getElementById('container'),
+          scope: 'usa'
+      });
+    </script> -->
+
     <script src="app.js"></script>
     <script src="routes/routes.js"></script>
     <script src="js/searchcontroller.js"></script>
@@ -35,13 +49,6 @@
     <script src="js/searchreturncontroller.js"></script>
     <script src="js/factories.js"></script>
 
-    <div id="container"></div>
-    <script>
-      var map = new Datamap({
-          element: document.getElementById('container'),
-          scope: 'usa'
-      });
-      </script>
 
   </body>
 </html>

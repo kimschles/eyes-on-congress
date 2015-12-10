@@ -1,1 +1,1 @@
-var app = angular.module("FinDataApp", ['ngRoute']);
+var app = angular.module("FinDataApp", ['ngRoute', 'datamaps']);
