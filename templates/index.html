@@ -4,6 +4,7 @@
 
 <!-- Showsist of legislators from the current state  -->
 
+<h1>{{stateName}}</h1>
 <main class="legisList"  ng-repeat="legislator in legislators">
   <a href="" ng-click="addCand(legislator['@attributes'].cid, legislator['@attributes'].lastname, legislator['@attributes'].firstlast, legislator['@attributes'].party, legislator['@attributes'].office)">
     {{legislator["@attributes"].firstlast}}- {{legislator["@attributes"].party}}</a>

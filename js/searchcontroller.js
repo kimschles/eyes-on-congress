@@ -16,22 +16,22 @@ app.controller('SearchController', ["$scope", "$location", 'DataFactory', 'Searc
       'defaultFill': '#DDDDDD'
     },
     data: {
-      "AZ": {
-        "fillKey": "MEDIUM",
-      },
-      "CO": {
-        "fillKey": "HIGH",
-      },
-      "DE": {
-        "fillKey": "LOW",
-      },
-      "GA": {
-        "fillKey": "MEDIUM",
-      }
+      // "AZ": {
+      //   "fillKey": "MEDIUM",
+      // },
+      // "CO": {
+      //   "fillKey": "HIGH",
+      // },
+      // "DE": {
+      //   "fillKey": "LOW",
+      // },
+      // "GA": {
+      //   "fillKey": "MEDIUM",
+      // }
     },
   }
 $scope.addSearch = function(state){
-  console.log('The state is ' + state.id);
+  $scope.stateName = state.properties.name;
   var sTerm = state.id
   SearchTerm.current = sTerm
   DataFactory.getList(SearchTerm.current).then(function(response) {
