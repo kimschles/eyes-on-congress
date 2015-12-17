@@ -37,7 +37,7 @@ h2, h3, h4 {
 }
 
 a {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .bioPic {
@@ -76,7 +76,6 @@ a {
   font-family: 'Lato', sans-serif;
   font-style: italic;
   font-size: 1.3em;
-  font-weight: bold;
   margin: auto;
   margin-left: 2.5em;
 }
@@ -85,7 +84,10 @@ a {
   display: inline;
   color: white;
   font-size: 2.3em;
+  font-weight: 700;
   text-align: center;
+  text-decoration: none;
+
 }
 
 .logo h2 {
@@ -96,6 +98,7 @@ a {
   padding: .25em;
 }
 
+
 .tagline {
   display: inline-block;
   width: 100%;
@@ -104,9 +107,11 @@ a {
   text-align: center;
 }
 
-datamap {
-  margin: 0 auto;
+svg {
+  display: block;
+  margin: auto;
 }
+
 .rightArticle {
   width: 50%;
   float: right;
